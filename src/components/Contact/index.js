@@ -37,7 +37,7 @@ function ContactForm() {
     
     return (
         <section>
-            <h1>Contact Me</h1>
+            <h1 data-testid="contact">Contact Me</h1>
             <form id="contact-form">
                 <div>
                     <label htmlFor='name'>Name:</label>
@@ -57,7 +57,7 @@ function ContactForm() {
                     </div>
                 )}
                 {/* && is used as a short circuit. if the first value resolves to true, the second value will be evaluated */}
-                    <button type="submit" onSubmit={handleSubmit}>Submit</button>
+                    <button type="submit" onSubmit={handleSubmit} data-testid="submit-btn">Submit</button>
             </form>
         </section>
     )
